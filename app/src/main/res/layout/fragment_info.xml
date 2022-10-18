@@ -8,8 +8,30 @@
     tools:context=".fragments.Info">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textTitle1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_gravity="center|top"
+        android:layout_marginTop="24dp"
+        android:text="@string/information"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/textPersonalInf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="112dp"
+        android:text="@string/name"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/task"
+        android:textAlignment="center"
+        android:textSize="24sp" />
 </FrameLayout>
