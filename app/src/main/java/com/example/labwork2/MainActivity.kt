@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity(), Input.OnPasswordEnteredListener, Resul
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setFragment(Main())
+        setFragment(Main.newInstance())
     }
 
 
@@ -29,6 +29,6 @@ class MainActivity : AppCompatActivity(), Input.OnPasswordEnteredListener, Resul
     }
 
     override fun backEvent() {
-        setFragment(Main())
+        setFragment(Main.newInstance())
     }
 }

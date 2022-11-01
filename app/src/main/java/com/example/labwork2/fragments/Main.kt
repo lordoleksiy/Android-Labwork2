@@ -35,10 +35,10 @@ class Main : Fragment() {
     }
 
     private fun VPSettings(){
-        titleList.add("Info")
         titleList.add("Input")
-        fragmentList.add(Info.newInstance())
+        titleList.add("Info")
         fragmentList.add(Input.newInstance())
+        fragmentList.add(Info.newInstance())
 
         val vpController = VPController(requireActivity());
         vpController.setFragmentList(fragmentList)
@@ -47,5 +47,10 @@ class Main : Fragment() {
         TabLayoutMediator(tabLayout, viewPager){
                 tab, pos -> tab.text = titleList[pos]
         }.attach()
+    }
+
+    companion object{
+        @JvmStatic
+        fun newInstance() = Main()
     }
 }
