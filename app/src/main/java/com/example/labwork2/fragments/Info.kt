@@ -16,6 +16,7 @@ class Info : Fragment() {
         return inflater.inflate(R.layout.fragment_info, container, false)
     }
     companion object{
+        @JvmStatic
         fun newInstance() = Info();
     }
 }
